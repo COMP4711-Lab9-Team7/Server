@@ -2,10 +2,10 @@
 -- version 4.6.4
 -- https://www.phpmyadmin.net/
 --
--- Host: localhost:3306
--- Generation Time: Nov 18, 2016 at 10:54 PM
--- Server version: 5.6.34
--- PHP Version: 5.6.27
+-- Host: localhost
+-- Generation Time: Nov 26, 2016 at 09:10 PM
+-- Server version: 5.6.32
+-- PHP Version: 5.6.25
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -17,7 +17,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `lab6`
+-- Database: `comp4711lab9server`
 --
 
 -- --------------------------------------------------------
@@ -26,7 +26,6 @@ SET time_zone = "+00:00";
 -- Table structure for table `menu`
 --
 
-DROP TABLE IF EXISTS `menu`;
 CREATE TABLE `menu` (
   `id` int(11) NOT NULL,
   `name` varchar(32) NOT NULL,
@@ -50,7 +49,9 @@ INSERT INTO `menu` (`id`, `name`, `description`, `price`, `picture`, `category`)
 (25, 'Burger', 'Half-pound of beef, topped with bacon and served with your choice of a slice of American cheese, red onion, sliced tomato, and Heart Attack Grill\'s own unique special sauce.', '9.99', 'burger.png', 'm'),
 (21, 'Coffee', 'value\r\n	', '2.95', 'coffee.png', 'd');
 
--- --------------------------------------------------------
+--
+-- Indexes for dumped tables
+--
 
 --
 -- Indexes for table `menu`
